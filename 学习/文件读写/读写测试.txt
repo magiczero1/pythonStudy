@@ -1,0 +1,6 @@
+print的进阶用法
+print的进阶用法
+["zhangsan", "lisi", "JAck", "rose"]
+["zhangsan", "lisi", "JAck", "rose"]
+["zhangsan", "lisi", "JAck", "rose"]
+{"\u5403\u996d": 90, "\u6d17\u811a": 666}["zhangsan", "lisi", "JAck", "rose"]{"\u5403\u996d": 90, "\u6d17\u811a": 666}["zhangsan", "lisi", "JAck", "rose"]

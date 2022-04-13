@@ -1,0 +1,37 @@
+    function a(a) {
+        var d, e, b = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", c = "";
+        for (d = 0; a > d; d += 1)
+            e = Math.random() * b.length,     #e取随机值
+            e = Math.floor(e),                #e向下取整
+            c += b.charAt(e);                 #取b中对应b代表数的位置的值，不断累计，生成长度为16的c
+        return c
+    }
+    function b(a, b) {
+        var c = CryptoJS.enc.Utf8.parse(b)#数据，c==b，秘钥
+          , d = CryptoJS.enc.Utf8.parse("0102030405060708")
+          , e = CryptoJS.enc.Utf8.parse(a)
+          , f = CryptoJS.AES.encrypt(e, c, {#c就是秘钥
+            iv: d, #偏移量
+            mode: CryptoJS.mode.CBC#加密模式CBC
+        });
+        return f.toString()
+    }
+    function c(a, b, c) {
+        var d, e;
+        return setMaxDigits(131),
+        d = new RSAKeyPair(b,"",c),   #d使用RSA加密
+        e = encryptedString(d, a)
+    }
+    function d(d, e, f, g) {
+        var h = {}
+          , i = a(16);#把c的值赋给i
+        h.encText = b(d, g),
+        h.encText = b(h.encText, i),
+        h.encSecKey = c(i, e, f),
+        return h
+    }
+    function e(a, b, d, e) {
+        var f = {};
+        return f.encText = c(a + e, b, d),
+        f
+    }

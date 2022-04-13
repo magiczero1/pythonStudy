@@ -1,0 +1,42 @@
+#输出print()
+print("bell python")
+#输入input()
+'''
+word=input("请输入任意内容：")
+print(word,'数据类型',type(word))
+'''
+#评估函数eval()
+x=1
+y=5
+z=eval('x+y')
+print(z)
+#转换整型int()
+'''
+num=int(input("请输入数字："))
+print(num,'数据类型',type(num))
+'''#第一种
+'''
+num1=input("请输入数字：")
+num2=int(num1)
+print(num2,'数据类型',type(num2))
+'''
+#转换浮点型float()
+'''
+num3=float(input("请输入数字："))
+print(num3,'数据类型',type(num3))
+'''
+#转换字符串str()
+'''
+a=4
+a=str(a)
+print(a,type(a))
+'''
+#获取字符ascii码ord()
+asc_a=ord('a')
+print('a的ascII码为',asc_a)
+#anscii码转字符chr()
+asc_99=chr(99)
+print('序号为99的ascII码解码后为',asc_99)
+#范围range()
+for i in range(0,8,2):
+    print(i)

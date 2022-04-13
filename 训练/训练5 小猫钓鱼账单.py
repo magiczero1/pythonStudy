@@ -1,0 +1,16 @@
+a,b,c=6,4,8
+price1,price2,price3=1.2,2.3,3.7
+fish1,fish2,fish3='鲫鱼','鲤鱼','草鱼'
+date='2021年12月'
+Totol_number=a+b+c
+Totol_p=a*price1+b*price2+c*price3
+print('----'*4+'小猫钓鱼记账单'+'----'*4)
+print('钓鱼地点|'+'日期|'+'鱼名|'+'数量（条）|'+'单价（元）')
+print('左小河|'+date+'1日|'+fish1+'%d|'%a+'%f'%price1)
+print('右小河|'+date+'2日|'+fish2+'%d|'%b+'%f'%price2)
+print('左小河|'+date+'3日|'+fish1+'%d|'%c+'%f'%price3)
+print('----'*12+'--')
+print('小猫一共钓了%d条鱼，卖了%.2f元，平均每天大约钓%d条鱼'%(Totol_number,Totol_p,Totol_number/3))
+print('平均每条鱼%.2f元'%(Totol_p/Totol_number))
+print('----'*12+'--')
+print('记账人：zero'+'记账时间'+date+'4日')

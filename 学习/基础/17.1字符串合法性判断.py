@@ -1,0 +1,26 @@
+#isidentifier()判断是否是合法标识符,大多用于判断输入内容
+#关于合法标识符的规则，仅包含区分大小写的字母、数字。下划线.
+'''
+s1="python"
+print("a.",s1.isidentifier())
+s2="hello，python"
+print("2.",s2.isidentifier())#增加了逗号，不是合法标识符
+print("3.","张三_".isidentifier())
+'''
+#isspace()用于判断是否全部由空白字符组成，如空格、制表符、换行等
+print("4.","      ".isspace())
+print("5.",'''   
+           '''.isspace())
+#isalpha()用于判断是否全部由字母组成
+print("6.","12124".isalpha())
+print("7.","abcdERR".isalpha())
+print("7.a","abcdERR张三".isalpha())#汉字也算字母
+#isdecimal()用于判断是否全部由十进制数字组成
+print("8.","110010101".isdecimal())
+print("8.a","110010101四".isdecimal())#仅兼容阿拉伯数字
+#isnumeric()用于判断是否全部由数字组成
+print("9.","11001011".isnumeric())
+print("9.a","11001011四".isnumeric())#兼容罗马数字，和中文数字
+#isalnum()用于判断是否全部由数字或字母组成
+print("10.","11001011AAABBC".isalnum())
+print("10.a","11001011AAABBC四二".isalnum())#兼容罗马数字，和中文、中文数字

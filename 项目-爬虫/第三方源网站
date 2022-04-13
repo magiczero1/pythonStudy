@@ -1,0 +1,2 @@
+pip install XXX -i https://pypi.tuna.tsinghua.edu.cn/simple  清华源
+pip install XXX -i(临时使用标识) http://mirrors.aliyun.com/ppip install XXX -i https://pypi.tuna.tsinghua.edu.cn/simpleypi/simple --trusted-host mirrors.aliyun.com  阿里源
